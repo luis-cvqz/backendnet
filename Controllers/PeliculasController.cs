@@ -102,7 +102,7 @@ public class PeliculasController(DataContext context) : Controller
     }
         
     // DELETE: api/peliculas/5/categoria/1
-    [HttpDelete]
+    [HttpDelete("{id}/categoria/{categoriaid}")]
     public async Task<IActionResult> DeleteCategoriaPelicula(int id, int categoriaid)
     {
         Categoria? categoria = await context.Categoria.FindAsync(categoriaid);
