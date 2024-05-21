@@ -6,7 +6,7 @@ GET http://localhost:3000/api/peliculas?s=Dun
 
 ###
 
-GET http://localhost:3000/api/peliculas/19
+GET http://localhost:3000/api/peliculas/16
 
 ###
 
@@ -21,11 +21,11 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/api/peliculas/19
+PUT http://localhost:3000/api/peliculas/16
 Content-Type: application/json
 
 {
-    "peliculaid": 19,
+    "peliculaid": 16,
     "titulo": "Paw Patrol: La Súper Película",
     "sinopsis": "Un meteorito mágico aterriza en Adventure City y otorga superpoderes a los cachorros de PAW Patrol, convirtiéndolos en The Mighty Pups.",
     "anio": 2024,
@@ -34,7 +34,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/api/peliculas/19/categoria
+POST http://localhost:3000/api/peliculas/16/categoria
 Content-Type: application/json
 
 {
@@ -43,7 +43,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/peliculas/19/categoria
+DELETE http://localhost:3000/api/peliculas/16/categoria
 Content-Type: application/json
 
 {
@@ -52,4 +52,37 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/peliculas/19
+DELETE http://localhost:3000/api/peliculas/16
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Película de prueba 1",
+    "sinopsis": "Sinopsis de prueba 1.",
+    "anio": 2022
+}
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Película de prueba 2",
+    "sinopsis": "Sinopsis de prueba 2.",
+    "anio": 2023
+}
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Película de prueba 3",
+    "sinopsis": "Sinopsis de prueba 3.",
+    "anio": 2024
+}
